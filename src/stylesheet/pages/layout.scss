@@ -1,0 +1,60 @@
+.layout_body{
+  width: 100%;
+  display: flex;
+
+  /*sidenav*/
+  @import "sidenav";
+
+  .main_section{
+
+    width: calc(100% - 230px);
+    background-color: #EFF1F9;
+    margin-left: 230px;
+    display: block;
+    @media only screen and (max-width: 1024px) {
+      width: calc(100% - 60px);
+      margin-left: 60px;
+    }
+    &.full{
+      width: calc(100% - 60px);
+      margin-left: 60px;
+    }
+
+    /*Header*/
+    @import "header";
+
+    .inner-section{
+      padding: 0 30px;
+      display: block;
+      overflow: hidden;
+      margin-bottom: 25px;
+      @media only screen and (max-width: 768px) {
+        padding: 0 5px;
+      }
+      .active {
+        background: #ffffff;
+        opacity: 1;
+        color: $theme;
+      }
+
+      .route-body{
+        width: 100%;
+        border-radius: 0;
+        display: block;
+        height:calc(100vh - 112px);
+        overflow: auto;
+        background: #fff;
+        @media only screen and (max-width: 768px) {
+          padding: 5px;
+          height: calc(100vh - 80px);
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px){
+  .full{
+    width: 100%!important;
+    margin: 0!important;
+  }
+}

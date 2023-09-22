@@ -1,0 +1,65 @@
+.btn-theme{
+  background-color: $theme;
+  border-radius: 8px;
+  padding: 10px 30px;
+  color: #ffffff;
+  transition: all .4s ease;
+  outline: none;
+  border: 0;
+  &:hover{
+    transition: all .4s ease;
+    background-color: $theme-light;
+    color: #ffffff;
+  }
+}
+
+.main-inner-body {
+  width: 100%;
+  border-radius: 3px;
+  display: block;
+  height: calc(100vh - 184px);
+  overflow: auto;
+
+  .section-wrapper {
+    padding: 20px;
+    background: #fff;
+    .table-section{
+      .table{
+        td, th{
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding: 15px;
+    height: calc(100vh - 165px);
+  }
+
+  .button-left {
+    display: table;
+    width: 100%;
+  }
+
+}
+
+
+
+
+.form-control{
+  border: 1px solid #e6ebf1;
+  border-radius: 8px;
+  height: 42px;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  outline: none;
+  transition: all .4s ease;
+  box-shadow: none;
+  &:focus{
+    transition: all .4s ease;
+    border: 1px solid $theme;
+    box-shadow: none;
+  }
+}

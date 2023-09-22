@@ -1,8 +1,8 @@
 <template>
     <div class="layout_body">
-      <div class="sidenav"></div>
+      <Sidenav />
       <div class="main_section">
-        <div class="header"></div>
+        <Header />
         <div class="inner-section">
           <div class="route-body">
             <router-view></router-view>
@@ -12,5 +12,12 @@
     </div>
 </template>
 <script>
-
+import Header from './shared/AdminHeader'
+import Sidenav from './shared/AdminSidenav'
+export default {
+  components: {
+    Header,
+    Sidenav
+  }
+}
 </script>

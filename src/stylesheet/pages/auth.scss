@@ -2,8 +2,60 @@
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   .login-wrapper{
     border: 1px solid #f0f0f0;
-    padding: 20px;
+    width: 500px;
+    border-radius: 12px;
+    background-color: #fff;
+    padding: 30px 40px;
+    .logo{
+      margin-bottom: 30px;
+      text-align: center;
+      img{
+        width: 150px;
+      }
+    }
+    .login-form{
+      .form-group{
+        margin-bottom: 20px;
+        label{
+          margin-bottom: 5px;
+          &:before{
+            content: '*';
+            color: red;
+          }
+        }
+        .from-control{
+          border: 1px solid #e6ebf1;
+          border-radius: 8px;
+          height: 42px;
+          padding: 10px;
+          display: block;
+          width: 100%;
+          outline: none;
+          transition: all .4s ease;
+          &:focus{
+            transition: all .4s ease;
+            border: 1px solid $theme;
+          }
+        }
+      }
+    }
+    .option{
+      color: #72849a;
+      margin-top: 30px;
+      a{
+        color: $theme;
+        text-decoration: none;
+        transition: all .4s ease;
+        &:hover{
+          transition: all .4s ease;
+          color: $theme-light;
+        }
+      }
+    }
   }
 }
