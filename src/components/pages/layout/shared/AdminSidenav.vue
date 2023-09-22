@@ -32,6 +32,7 @@ export default {
       toggleMenu: function () {
         const sidenav = document.querySelector('.sidenav');
         const sidebarToggler = document.querySelector('.sidebar-toggler');
+        const mainSection = document.querySelector('.main_section');
         if (sidenav.classList.contains('mini')) {
           sidenav.classList.remove('mini')
         } else {
@@ -48,12 +49,20 @@ export default {
         } else {
           sidenav.classList.add('active')
         }
+
+        if (mainSection.classList.contains('full')) {
+          mainSection.classList.remove('full')
+        } else {
+          mainSection.classList.add('full')
+        }
       },
       closeMenu: function () {
         const sidenav = document.querySelector('.sidenav');
+        const mainSection = document.querySelector('.main_section');
         if (window.screen.width < 1025) {
           sidenav.classList.remove('active')
           sidenav.classList.add('mini')
+          mainSection.classList.add('full')
         }
       },
     },

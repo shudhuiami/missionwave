@@ -29,7 +29,7 @@
       overflow: hidden;
       margin-bottom: 25px;
       @media only screen and (max-width: 768px) {
-        padding: 0 5px;
+        padding: 0 15px;
       }
       .active {
         background: #ffffff;
@@ -43,7 +43,6 @@
         display: block;
         height:calc(100vh - 112px);
         overflow: auto;
-        background: #fff;
         @media only screen and (max-width: 768px) {
           padding: 5px;
           height: calc(100vh - 80px);
@@ -53,8 +52,7 @@
   }
 }
 @media screen and (max-width: 768px){
-  .full{
-    width: 100%!important;
-    margin: 0!important;
-  }
+  //.full{
+  //  width: 100%!important;
+  //}
 }

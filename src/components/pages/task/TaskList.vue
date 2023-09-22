@@ -1,6 +1,6 @@
 <template>
   <div class="main-inner-body">
-    <div class="section-wrapper">
+    <div class="section-wrapper h-100">
       <div class="filter-section">
         <div class="row">
           <div class="col-md-3 mb-3">
