@@ -2,14 +2,14 @@
   <div class="main-inner-body">
     <div class="section-wrapper h-100">
       <div class="filter-section">
-        <div class="row">
-          <div class="col-md-3 mb-3">
+        <div class="row mb-4">
+          <div class="col-md-6 col-lg-4 col-xxl-3">
             <div class="form-group">
               <input type="text" class="form-control" placeholder="Search" id="search">
             </div>
           </div>
-          <div class="col-md-6"></div>
-          <div class="col-md-3 text-end mb-3">
+          <div class="col-md-3 col-lg-5 col-xxl-6"></div>
+          <div class="col-md-3 text-end mt-2 mt-md-0">
             <router-link :to="{name: 'TaskManage', params: {id: 1}}" class="btn btn-theme btn-100 me-1 ms-1" style="width: 140px">New Task</router-link>
           </div>
         </div>

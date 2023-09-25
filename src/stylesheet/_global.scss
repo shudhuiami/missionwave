@@ -17,9 +17,9 @@
   width: 100%;
   border-radius: 3px;
   display: block;
-  height: calc(100vh - 184px);
-  overflow: auto;
-
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
   .section-wrapper {
     padding: 20px;
     background: #fff;
@@ -37,10 +37,6 @@
     }
   }
 
-  @media only screen and (max-width: 768px) {
-    padding: 15px;
-    height: calc(100vh - 165px);
-  }
 
   .button-left {
     display: table;
